@@ -16,6 +16,7 @@ const addTask = (event) => {
     if (taskText.textContent != '') {
         taskWrapper.append(newTask, taskLabel, deleteTaskButton);
         tasksContainer.appendChild(taskWrapper);
+        document.querySelector('.todo-input').value = '';
     } else {
         const alertMessage = document.createElement('p');
         alertMessage.textContent = 'Please, write a task before adding to the list';
