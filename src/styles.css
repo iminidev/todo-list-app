@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #2C365E;
+}
+
+#app {
+    width: 37%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+.todo-form, .tasks-container {
+    width: 100%;
+    text-align: center;
+}
+
+.todo-form {
+    background-color: #6856E2;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.todo-label, .todo-input, .todo-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.todo-label {
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #DDD;
+    color: #FFF;
+    transition: all 0.5s ease;
+}
+
+.todo-input:focus {
+    border-bottom: 1px solid #FFF;
+}
+
+.todo-input::placeholder {
+    color: #DDD;
+}
+
+.todo-input:focus::placeholder {
+    color: #FFF;
+}
+
+.todo-button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #4AABA6;
+    color: #FFF;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+.task-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25px 1fr 50px;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.task-wrapper input[type=checkbox] {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #888;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.task-wrapper input[type=checkbox]:checked {
+    background-color: #4AABA6;
+    border: none;
+}
+
+.delete-button {
+    width: 50%;
+    background-image: url(/assets/trash-can-solid-red.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    justify-self: end;
+    cursor: pointer;
+    transition: background-image 0.5s ease;
+}
+
+.delete-button:hover {
+    background-image: url(/assets/trash-can-solid-soft-red.svg);
+}
+
