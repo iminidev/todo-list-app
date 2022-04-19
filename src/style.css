@@ -110,7 +110,7 @@ body {
 
 .delete-button {
     width: 50%;
-    background-image: url(/assets/trash-can-solid-red.svg);
+    background-image: url(../assets/trash-can-solid-red.svg);
     background-position: center;
     background-repeat: no-repeat;
     border: none;
@@ -122,6 +122,6 @@ body {
 }
 
 .delete-button:hover {
-    background-image: url(/assets/trash-can-solid-soft-red.svg);
+    background-image: url(../assets/trash-can-solid-soft-red.svg);
 }
 
